@@ -1,3 +1,7 @@
+form {
+  display: flex;
+}
+
 .button__con {
   display: flex;
   gap: 1em;
