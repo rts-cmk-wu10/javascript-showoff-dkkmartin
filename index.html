@@ -7,12 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
   </head>
   <body>
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <h2>Add Contact</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group form-group--buttons">
+            <button type="submit" id="addModalBtn">Add</button>
+            <button type="button" id="closeModalBtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <main>
       <h1>Contact manager</h1>
       <section class="search__con">
-        <form>
+        <form class="searchForm">
           <input id="search" class="contact__search" type="search" />
           <button class="contact__search__button">Search</button>
         </form>
