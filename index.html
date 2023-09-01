@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <main>
       <h1>Contact manager</h1>
-      <button class="add__contact">New contact</button>
+      <section class="search__con">
+        <input class="contact__search" type="text" />
+        <button class="contact__search__button">Search</button>
+      </section>
+      <section class="button__con">
+        <button class="add__contact">New contact</button>
+        <button class="show__contact">Show contacts</button>
+      </section>
+      <section class="contact__section"></section>
     </main>
     <script src="/app.js" defer></script>
   </body>

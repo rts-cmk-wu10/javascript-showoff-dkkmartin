@@ -70,3 +70,27 @@ const contacts = [
     phone: "555-210-9876",
   },
 ];
+
+const searchBtn = document.querySelector('.contact__search__button')
+const newContactBtn = document.querySelector('.add__contact')
+const showAllBtn = document.querySelector('.show__contact')
+const contactCon = document.querySelector('.contact__section')
+const searchInput = document.querySelector('.contact__search')
+
+
+showAllBtn.addEventListener('click', () => {
+  contactCon.innerHTML = ""
+  contacts.forEach((contact) => {
+    const contactCard = document.createElement('div')
+    contactCard.classList.add('contact__card')
+    contactCard.innerHTML += `
+    <h2>${contact.firstName} ${contact.lastName}</h2>
+    <ul>
+      <li><span class="contact__info">Phone:</span> ${contact.phone}</li>
+      <li><span class="contact__info">Email:</span> <a href="mailto:${contact.email}">${contact.email}</a></li>
+    </ul>
+   `
+   contactCon.appendChild(contactCard)
+  })
+})
+

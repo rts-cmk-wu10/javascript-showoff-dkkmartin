@@ -1,0 +1,59 @@
+.button__con {
+  display: flex;
+  gap: 1em;
+}
+
+.search__con {
+  display: flex;
+  align-items: center;
+}
+
+.search__con button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.search__con button:hover {
+  transform: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  width: 100vw;
+}
+
+input {
+  width: 200px;
+  height: 49px;
+  border: 1px solid black;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 0.5em;
+}
+
+.contact__section ul {
+  list-style-type: none;
+}
+
+.contact__info {
+  font-weight: bold;
+  color: var(--text2-color);
+}
+
+.contact__section a {
+  color: inherit;
+}
+
+.contact__section {
+  padding: 1em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
